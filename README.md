@@ -1,1 +1,2 @@
 # Python-Projects-With-Selenium
+In the script you need to enter your username and password in the place specified before running it.
