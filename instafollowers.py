@@ -5,11 +5,12 @@ import numpy as np
 
 class Bot:
     def __init__(self):
-        self.driver = webdriver.Chrome(executable_path="C:/Python Learn/selenium learn/webdriver/chromedriver.exe")
+                                                        # Below specify the chrome driver path
+        self.driver = webdriver.Chrome(executable_path="# Here specify the chrome driver path")
         self.driver.get("https://www.instagram.com")
         sleep(3)
-        self.driver.find_element_by_name("username").send_keys("#add uname here")       #username
-        self.driver.find_element_by_name("password").send_keys("#add pd here")       #password
+        self.driver.find_element_by_name("username").send_keys("#add uname here")    #username
+        self.driver.find_element_by_name("password").send_keys("#add pd here")       #password and good to go.
         sleep(2)
         self.driver.find_element_by_xpath("//*[@id='react-root']/section/main/article/div[2]/div[1]/div/form/div[4]").click()
         sleep(8)
